@@ -22,6 +22,9 @@ main{
 .color-2{
     color: rgba(233, 90, 8, 1);
 }
+.color-3{
+    color: white;
+}
 .display-flex{
     display: flex;
 }
@@ -111,7 +114,7 @@ main{
     margin-top: -8rem;
     margin-left: 23rem;
     position: absolute;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 .flower-store{
     width: 100%;
@@ -121,9 +124,85 @@ main{
     margin-bottom: 20px;
 }
 
+/* latest section style */
+.latest{
+    margin-top: 130px;
+    text-align: center;
+    justify-items: center
+}
+.latest-img {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: repeat(2, auto);   
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.latest-img > div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.latest-img img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+.latest-img .span-img {
+  grid-column: 2;
+  grid-row: span 2;
+}
+.latest-img .second{
+  position: absolute;
+  top: 140px;
+  left: 190px;
+  z-index: 2;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+.latest-img .first,.third{
+  position: absolute;
+  top: 70px;
+  left: 90px;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+/* section 4 style */
+.section4{
+    margin-top: 120px;
+    background-image: url(assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 200px
+    
+}
+.section4-title{
+    font-size: 4rem;
+    text-align: center;
+    justify-items: center;
+}
+.email-form{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.input{
+    flex: 1;
+    max-width: 640px;
+    padding: 20px 75px;
+    border: none;
+}
+
 /* responsive style */
 @media screen and (max-width:576px) {
-    .x, .y, .z, .trusted-badge {
+    .x, .y, .z, .trusted-badge, .first, .second, .third {
         display: none;
     }
     .banner, .plants-section2{
@@ -144,6 +223,35 @@ main{
     .plants-section2-content{
         margin-top: -80px;
     }
+    .latest-img{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .latest-img .span-img {
+        grid-column: auto ;
+        grid-row: auto;
+  }
+    .latest-img > * {
+    grid-column: auto 
+  }
+      .section4 {
+    padding: 80px 20px;
+    margin-top: 40px;
+  }
+
+  .section4-title {
+    font-size: 2rem;
+  }
+   .button {
+    width: 30%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  .input{
+    width: 10%;
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
 
 
