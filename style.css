@@ -96,15 +96,54 @@ main{
 .dollar{
     font-size: 1.375rem;
 }
+
+/* plant section2 */
+.plants-section2{
+    display: flex;
+    margin-top: 200px;
+    gap: 60px;
+}
+.plants-section2-content{
+    max-width: 540px;
+}
+.trusted-badge{
+    max-width: 268px;
+    margin-top: -8rem;
+    margin-left: 23rem;
+    position: absolute;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+}
+.flower-store{
+    width: 100%;
+}
+.section2-list{
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+}
+
 /* responsive style */
 @media screen and (max-width:576px) {
-    .x, .y, .z {
+    .x, .y, .z, .trusted-badge {
         display: none;
     }
-    .banner{
+    .banner, .plants-section2{
         flex-direction: column;
     }
     .banner img{
         order: -1;
     }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-primary{
+        padding: 10px 40px;
+    }
+    .plants-section2{
+        margin-top: 20px;
+    }
+    .plants-section2-content{
+        margin-top: -80px;
+    }
 }
+
+
