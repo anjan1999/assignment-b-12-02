@@ -1,0 +1,17 @@
+/* shared styles */
+.primary-title{
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-weight: 3.125rem;
+}
+.secondary-text{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-weight: 1.37rem;
+}
+.color-1{
+    color: rgba(0, 0, 0, 0.5);
+}
+.color-2{
+    color: rgba(233, 90, 8, 1);
+}
